@@ -1,0 +1,26 @@
+.chat-sidemenu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    height: 3em;
+    width: 12em;
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .chat-sidemenu__header {
+        width: 18em;
+    }
+}
+
+.chat-sidemenu__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.chat-sidemenu__close-button {
+    margin-right: 1em;
+    cursor: pointer;
+}

@@ -1,58 +1,61 @@
 {
-    "name": "angular-chat",
-    "version": "1.0.0",
-    "description": "test application",
-    "main": "index.js",
-    "scripts": {
-        "dev": "webpack-dev-server --hot --open",
-        "build": "webpack",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Vlodzimej/angular-chat.git"
-    },
-    "keywords": [
-        "test",
-        "angular"
-    ],
-    "author": "Vladimir Amelkin",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Vlodzimej/angular-chat/issues"
-    },
-    "homepage": "https://github.com/Vlodzimej/angular-chat#readme",
-    "dependencies": {
-        "@angular/common": "^8.2.5",
-        "@angular/compiler": "^8.2.5",
-        "@angular/core": "^8.2.5",
-        "@angular/forms": "^8.2.5",
-        "@angular/platform-browser": "^8.2.5",
-        "@angular/platform-browser-dynamic": "^8.2.5",
-        "@angular/router": "^8.2.5",
-        "core-js": "3.1.0",
-        "reset-css": "^4.0.1",
-        "rxjs": "^6.5.0",
-        "zone.js": "0.9.1"
-    },
-    "devDependencies": {
-        "@types/node": "12.0.0",
-        "angular2-template-loader": "0.6.2",
-        "awesome-typescript-loader": "5.2.1",
-        "css-loader": "2.1.0",
-        "file-loader": "4.0.0",
-        "html-loader": "0.5.5",
-        "html-webpack-plugin": "3.2.0",
-        "mini-css-extract-plugin": "0.7.0",
-        "node-sass": "^4.12.0",
-        "raw-loader": "3.0.0",
-        "sass-loader": "^8.0.0",
-        "style-loader": "^1.0.0",
-        "to-string-loader": "^1.1.5",
-        "typescript": "^3.5.0",
-        "uglifyjs-webpack-plugin": "2.1.0",
-        "webpack": "4.33.0",
-        "webpack-cli": "3.3.0",
-        "webpack-dev-server": "3.6.0"
-    }
+  "name": "angular-chat",
+  "version": "1.0.0",
+  "description": "test application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --open",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlodzimej/angular-chat.git"
+  },
+  "keywords": [
+    "test",
+    "angular"
+  ],
+  "author": "Vladimir Amelkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vlodzimej/angular-chat/issues"
+  },
+  "homepage": "https://github.com/Vlodzimej/angular-chat#readme",
+  "dependencies": {
+    "@angular/common": "^8.2.5",
+    "@angular/compiler": "^8.2.5",
+    "@angular/core": "^8.2.5",
+    "@angular/forms": "^8.2.5",
+    "@angular/platform-browser": "^8.2.5",
+    "@angular/platform-browser-dynamic": "^8.2.5",
+    "@angular/router": "^8.2.5",
+    "@fortawesome/angular-fontawesome": "^0.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "core-js": "3.2.1",
+    "reset-css": "^4.0.1",
+    "rxjs": "^6.5.3",
+    "zone.js": "0.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "12.7.4",
+    "angular2-template-loader": "0.6.2",
+    "awesome-typescript-loader": "5.2.1",
+    "css-loader": "3.2.0",
+    "file-loader": "4.2.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.12.0",
+    "raw-loader": "3.1.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "to-string-loader": "^1.1.5",
+    "typescript": "^3.5.0",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.8",
+    "webpack-dev-server": "3.8.0"
+  }
 }

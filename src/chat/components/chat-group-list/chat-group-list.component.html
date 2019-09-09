@@ -1,0 +1,31 @@
+<div class="chat-list-group__header">
+    <span class="chat-list-group__title">{{ title }}</span>
+</div>
+<ul class="chat-list-group">
+    <li *ngFor="let group of groups" class="chat-list-group-item ">
+        <div class="chat-list-group-item__header">
+            <div>{{ group.numb }}</div>
+            <div>{{ group.date }} {{ group.time }}</div>
+        </div>
+        <div class="chat-list-group-item__body">
+            <div class="chat-list-group-item__name-container">
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+                <span class="chat-list-group-item__name">{{ group.name }}</span>
+            </div>
+            <div class="chat-list-group-item__counter">
+                <div>
+                    <fa-icon [icon]="faCommentDots"></fa-icon>
+                    <div class="chat-list-group-item__badge">
+                        {{ group.amountMsg }}
+                    </div>
+                </div>
+                <div>
+                    <fa-icon [icon]="faExclamationTriangle"></fa-icon>
+                    <div class="chat-list-group-item__badge alert">
+                        {{ group.amountWarn }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

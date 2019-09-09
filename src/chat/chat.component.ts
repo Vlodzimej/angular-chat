@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
     constructor() {}
-    title = "Chat";
 	ngOnInit() {}
+	isVisibled = false;
 }
