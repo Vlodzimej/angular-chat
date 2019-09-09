@@ -1,0 +1,33 @@
+$mainColor: blue;
+
+/* Стили для неактивного модального окна */
+
+:host {
+    position: relative;
+    background: #fff;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.chat {
+    display: flex;
+}
+
+.chat__title {
+    color: $mainColor;
+    font-weight: bold;
+}
+
+.chat-sidemenu {
+    background-color: darkgrey;
+    flex-direction: column;
+    align-items: flex-start;
+}
