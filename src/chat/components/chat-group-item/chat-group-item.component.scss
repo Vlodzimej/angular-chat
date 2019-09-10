@@ -1,0 +1,43 @@
+@import '../../../assets/styles/colors.scss';
+
+.chat-list-group-item__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.chat-list-group-item__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.chat-list-group-item__name-container {
+    display: flex;
+    align-items: center;
+}
+
+.chat-list-group-item__name {
+    margin-left: 4px;
+    color: $primaryFontColor;
+}
+
+.chat-list-group-item__badge {
+    width: 24px;
+    height: 21px;
+    background-color: $secondColor;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3px;
+    margin: 4px;
+}
+
+.chat-list-group-item__counter {
+    display: flex;
+}
+
+.alert {
+    background-color: $dangerColor;
+    color: $secondFontColor;
+}

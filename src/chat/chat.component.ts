@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { ChatModalService } from './services/chat.modal.service';
+import { ApiService } from './services/api.service';
 
 @Component({
 	selector: 'chat',
@@ -6,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['chat.component.scss'],
 })
 export class ChatComponent implements OnInit {
-    constructor() {}
-	ngOnInit() {}
-	isVisibled = false;
+	public isVisible = false;
+	constructor(
+		private chatModalService: ChatModalService,
+		private apiService: ApiService,
+	) {}
+
+	ngOnInit() {
+		this.chatModalService.addModal(this);
+	}
+
+	toggleModal() {
+		this.isVisible = !this.isVisible;
+	}
 }

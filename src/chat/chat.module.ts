@@ -10,6 +10,12 @@ import {
 } from './components';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ChatModalService } from './services/chat.modal.service';
+import { ApiService } from './services/api.service';
+import { HttpClient } from '@angular/common/http';
+import { ChatGroupItemComponent } from './components/chat-group-item/chat-group-item.component';
+import { GroupService } from './services/group.service';
+import { GroupStore } from './stores/group.store';
 
 @NgModule({
 	imports: [CommonModule, FormsModule, FontAwesomeModule],
@@ -19,6 +25,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 		ChatHeaderComponent,
 		ChatMainViewComponent,
 		ChatGroupListComponent,
+		ChatGroupItemComponent,
+	],
+	providers: [
+		ChatModalService,
+		HttpClient,
+		ApiService,
+		GroupStore,
+		GroupService,
 	],
 	exports: [ChatComponent],
 })

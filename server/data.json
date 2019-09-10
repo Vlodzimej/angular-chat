@@ -1,0 +1,50 @@
+{
+    "group": [
+        {
+            "id": "1",
+            "name": "Маркетплейс ВБЦ",
+            "numb": "БГ(№345678)",
+            "date": "21.06",
+            "time": "10:40",
+            "amountMsg": "3",
+            "amountWarn": "1"
+		},
+		{
+            "id": "2",
+            "name": "Тестовое задание",
+            "numb": "БГ(№345679)",
+            "date": "21.06",
+            "time": "10:42",
+            "amountMsg": "1",
+            "amountWarn": "0"
+        }
+    ],
+    "messages": [
+        {
+            "id": "1486",
+            "groupId": "1",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:04.863+03:00",
+            "text": "Добрый день!",
+            "file": null
+        },
+        {
+            "id": 1487,
+            "groupId": "2",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:37.829+03:00",
+            "text": "Как дела?",
+            "file": null
+        }
+    ]
+}

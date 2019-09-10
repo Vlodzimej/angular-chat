@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ChatModalService } from '../chat/services/chat.modal.service';
 
 @Component({
 	selector: 'my-app',
@@ -6,8 +7,12 @@ import { Component } from '@angular/core';
 	styleUrls: ['app.component.scss', '../assets/styles/normalize.css'],
 })
 export class AppComponent {
-	showChatModal: boolean = false;
-	openChatModal(): void {
-		this.showChatModal = true;
+	constructor(private chatModalService: ChatModalService) {
+		this.isShowChatModal = chatModalService.isVisible;
+	}
+	isShowChatModal = false;
+	
+	toggleChat(): void {
+		this.chatModalService.toggleModal();
 	}
 }
