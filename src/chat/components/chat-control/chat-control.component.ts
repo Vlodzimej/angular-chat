@@ -5,6 +5,8 @@ import {
     faEdit,
     faArrowRight
 } from '@fortawesome/free-solid-svg-icons';
+import { MessageService } from '../../services/message.service';
+import { MessageStore, Message } from '../../stores/message.store';
 
 @Component({
     selector: 'chat-control',
@@ -17,7 +19,25 @@ export class ChatControlComponent implements OnInit {
     faPlusSquare = faPlusSquare;
     faEdit = faEdit;
     faArrowRight = faArrowRight;
-    constructor() { }
+    public textMessage: String = '';
+    constructor(private _messageService: MessageService, private messageStore: MessageStore) { }
 
+    onSend() {
+        const data: Message = {
+            id: null,
+			groupId: "1",
+			selfMsg: true,
+			text: this.textMessage,
+			sender: {
+				name: 'Иванов Петр Сергеевич',
+				position: 'Менеджер',
+				orgName: 'ООО ВБЦ',
+            },
+            dateTimeCreate: "10.10.2019",
+            file: null
+		}
+        this.messageStore.addMessage(data);
+        this._messageService.sendMessage(data).subscribe();
+    }
     ngOnInit() { }
 }

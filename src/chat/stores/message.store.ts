@@ -4,14 +4,14 @@ import { MessageService } from '../services/message.service';
 
 export class Message {
 	constructor(
-		public msgId: String,
-		public selfMsg: String,
+		public id: String,
+		public groupId: String,
+		public selfMsg: boolean,
 		public sender: Sender,
 		public dateTimeCreate: String,
 		public text: String,
 		public file: String
 	) {}
-
 }
 
 export class Sender {
@@ -30,5 +30,9 @@ export class MessageStore {
 
 	@action async getMessagesByGroupId(groupId: String) {
 		this.groups = await this._messageService.getMessagesByGroupId(groupId);
+	}
+
+	@action addMessage(data: Message) {
+		this.groups.push(data);
 	}
 }

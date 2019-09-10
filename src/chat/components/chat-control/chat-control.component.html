@@ -4,6 +4,7 @@
         cols="30"
         rows="6"
         placeholder="Введите текст сообщения..."
+        [(ngModel)]="textMessage"
     ></textarea>
     <div class="chat-control__button-panel">
         <div class="chat-control__link-container">
@@ -21,7 +22,7 @@
                 ><fa-icon [icon]="faEdit"></fa-icon> Загрузить файл</a
             >
         </div>
-        <button class="chat-control__send">
+        <button class="chat-control__send" (click)="onSend()">
             Отправить <fa-icon [icon]="faArrowRight"></fa-icon>
         </button>
     </div>
