@@ -8,8 +8,8 @@
             "time": "10:40",
             "amountMsg": "3",
             "amountWarn": "1"
-		},
-		{
+        },
+        {
             "id": "2",
             "name": "Тестовое задание",
             "numb": "БГ(№345679)",
@@ -20,6 +20,19 @@
         }
     ],
     "messages": [
+        {
+            "id": "1485",
+            "groupId": "1",
+            "selfMsg": false,
+            "sender": {
+                "name": "Клиент Вася",
+                "position": "Клиент",
+                "orgName": ""
+            },
+            "dateTimeCreate": "2019-07-19T11:41:04.863+03:00",
+            "text": "Здравствкйте!",
+            "file": null
+        },
         {
             "id": "1486",
             "groupId": "1",
@@ -35,7 +48,59 @@
         },
         {
             "id": 1487,
-            "groupId": "2",
+            "groupId": "1",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:37.829+03:00",
+            "text": "Как дела?",
+            "file": null
+        },
+        {
+            "id": 1487,
+            "groupId": "1",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:37.829+03:00",
+            "text": "Как дела?",
+            "file": null
+        },
+        {
+            "id": 1487,
+            "groupId": "1",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:37.829+03:00",
+            "text": "Как дела?",
+            "file": null
+        },
+        {
+            "id": 1487,
+            "groupId": "1",
+            "selfMsg": true,
+            "sender": {
+                "name": "Иванов Петр Сергеевич",
+                "position": "Менеджер",
+                "orgName": "ООО ВБЦ"
+            },
+            "dateTimeCreate": "2019-07-19T11:41:37.829+03:00",
+            "text": "Как дела?",
+            "file": null
+        },
+        {
+            "id": 1487,
+            "groupId": "1",
             "selfMsg": true,
             "sender": {
                 "name": "Иванов Петр Сергеевич",

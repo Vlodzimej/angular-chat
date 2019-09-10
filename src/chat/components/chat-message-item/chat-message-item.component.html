@@ -1,0 +1,10 @@
+<div class="chat-message-item" [class.self]="message.selfMsg">
+    <div class="chat-message-item__header">
+        <span
+            >{{ message.sender.orgName }} / {{ message.sender.position }} /
+            {{ message.sender.name }}
+        </span>
+        <span>{{ time  }} </span>
+    </div>
+    <div class="chat-message-item__message">{{ message.text }}</div>
+</div>

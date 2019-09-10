@@ -1,0 +1,33 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/sizes.scss';
+
+.chat-message-item {
+    border: 1px solid $secondColor;
+    background-color: $secondColor;
+    border-radius: 0 8px 8px 8px;
+    padding: 16px;
+    font-size: $fontSize;
+    margin-top: 8px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 16px;
+}
+
+.self {
+    border: 1px solid $primaryColor;
+    background-color: $primaryBackgroundColor;
+    border-radius: 8px 0 8px 8px;
+    margin-left: 16px;
+    margin-right: 0px;
+}
+
+.chat-message-item__header {
+    display: flex;
+    justify-content: space-between;
+    color: $headerMessageFontColor;
+    margin-bottom: 16px;
+}
+
+.chat-message-item__message {
+    color: $messageFontColor;
+}

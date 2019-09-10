@@ -3,10 +3,12 @@ import { BASE_URL } from '../constants';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class GroupService {
+export class MessageService {
 	constructor(private httpClient: HttpClient) {}
 
-	getGroups() {
-		return this.httpClient.get(`${BASE_URL}/group`).toPromise<any>();
+	getMessagesByGroupId(groupId: String) {
+		return this.httpClient
+			.get(`${BASE_URL}/messages?groupId=${groupId}`)
+			.toPromise<any>();
 	}
 }

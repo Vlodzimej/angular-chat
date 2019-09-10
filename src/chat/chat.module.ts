@@ -2,20 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ChatComponent } from './chat.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClient } from '@angular/common/http';
 import {
 	ChatSideMenuComponent,
 	ChatHeaderComponent,
 	ChatMainViewComponent,
 	ChatGroupListComponent,
+	ChatGroupItemComponent,
+	ChatMessageListComponent,
+	ChatMessageItemComponent,
+	ChatControlComponent,
 } from './components';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ChatModalService } from './services/chat.modal.service';
-import { ApiService } from './services/api.service';
-import { HttpClient } from '@angular/common/http';
-import { ChatGroupItemComponent } from './components/chat-group-item/chat-group-item.component';
 import { GroupService } from './services/group.service';
+import { MessageService } from './services/message.service';
+
 import { GroupStore } from './stores/group.store';
+import { MessageStore } from './stores/message.store';
 
 @NgModule({
 	imports: [CommonModule, FormsModule, FontAwesomeModule],
@@ -26,13 +31,17 @@ import { GroupStore } from './stores/group.store';
 		ChatMainViewComponent,
 		ChatGroupListComponent,
 		ChatGroupItemComponent,
+		ChatMessageListComponent,
+		ChatMessageItemComponent,
+		ChatControlComponent,
 	],
 	providers: [
 		ChatModalService,
 		HttpClient,
-		ApiService,
 		GroupStore,
 		GroupService,
+		MessageStore,
+		MessageService,
 	],
 	exports: [ChatComponent],
 })

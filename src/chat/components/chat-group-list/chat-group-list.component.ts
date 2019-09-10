@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Group } from '../../stores/group.store';
 
 @Component({
@@ -8,6 +8,8 @@ import { Group } from '../../stores/group.store';
 })
 export class ChatGroupListComponent implements OnInit {
 	@Input() groups: Group[] = [];
+	@Output() select = new EventEmitter();
+	
 	public title = 'Продукты';
 
 	constructor() {}

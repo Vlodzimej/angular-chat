@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { ChatModalService } from './services/chat.modal.service';
-import { ApiService } from './services/api.service';
 
 @Component({
 	selector: 'chat',
@@ -9,10 +8,7 @@ import { ApiService } from './services/api.service';
 })
 export class ChatComponent implements OnInit {
 	public isVisible = false;
-	constructor(
-		private chatModalService: ChatModalService,
-		private apiService: ApiService,
-	) {}
+	constructor(private chatModalService: ChatModalService) {}
 
 	ngOnInit() {
 		this.chatModalService.addModal(this);

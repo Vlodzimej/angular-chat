@@ -1,0 +1,28 @@
+<div class="chat-control">
+    <textarea
+        class="chat-control__textarea"
+        cols="30"
+        rows="6"
+        placeholder="Введите текст сообщения..."
+    ></textarea>
+    <div class="chat-control__button-panel">
+        <div class="chat-control__link-container">
+            <a href="#" class="chat-control__link"
+                ><fa-icon [icon]="faPaperclip"></fa-icon> Загрузить файл</a
+            >
+        </div>
+        <div class="chat-control__link-container">
+            <a href="#" class="chat-control__link"
+                ><fa-icon [icon]="faPlusSquare"></fa-icon> Создать запрос</a
+            >
+        </div>
+        <div class="chat-control__link-container">
+            <a href="#" class="chat-control__link"
+                ><fa-icon [icon]="faEdit"></fa-icon> Загрузить файл</a
+            >
+        </div>
+        <button class="chat-control__send">
+            Отправить <fa-icon [icon]="faArrowRight"></fa-icon>
+        </button>
+    </div>
+</div>

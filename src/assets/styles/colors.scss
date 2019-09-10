@@ -1,7 +1,13 @@
 $primaryColor: #616c82;
 $secondColor: #e8eaf1;
+
 $backgroundColor: #d5d9e1;
 $primaryBackgroundColor: #fff;
+
 $primaryFontColor: #000;
 $secondFontColor: #fff;
+
+$headerMessageFontColor: lighten($primaryColor, 15%);
+$messageFontColor: $primaryColor;
+
 $dangerColor: #ef3437;

@@ -1,5 +1,9 @@
 @import '../../../assets/styles/colors.scss';
 
+:host {
+    cursor: pointer;
+}
+
 .chat-list-group-item__header {
     display: flex;
     justify-content: space-between;

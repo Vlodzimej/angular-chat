@@ -3,6 +3,9 @@
 </div>
 <ul class="chat-list-group">
     <li *ngFor="let group of groups" class="chat-list-group-item">
-        <chat-group-item [group]="group"></chat-group-item>
+        <chat-group-item
+            [group]="group"
+            (click)="select.emit(group.id)"
+        ></chat-group-item>
     </li>
 </ul>

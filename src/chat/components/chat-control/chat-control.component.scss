@@ -1,0 +1,49 @@
+@import '../../../assets/styles/colors.scss';
+
+.chat-control {
+    background-color: $backgroundColor;
+    padding-top: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.chat-control__textarea {
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.chat-control__button-panel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.chat-control__link-container {
+}
+
+.chat-control__link {
+    white-space: nowrap;
+    color: $primaryColor;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.chat-control__send {
+    border: none;
+    color: $primaryColor;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 4px;
+    font-size: 0.5em;
+    padding: 4px;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}

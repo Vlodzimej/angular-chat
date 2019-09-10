@@ -23,19 +23,4 @@ export class GroupStore {
 	@action async getGroups() {
 		this.groups = await this._groupService.getGroups();
 	}
-
-	@action addGroup({
-		id,
-		numb,
-		name,
-		date,
-		time,
-		amountMsg,
-		amountWarn,
-	}: Partial<Group>) {
-		this.groups = [
-			...this.groups,
-			new Group(id, numb, name, date, time, amountMsg, amountWarn),
-		];
-	}
 }

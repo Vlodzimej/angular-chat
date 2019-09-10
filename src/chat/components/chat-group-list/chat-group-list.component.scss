@@ -1,9 +1,10 @@
 @import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/sizes.scss';
 
 .chat-list-group {
     display: flex;
     flex-direction: column;
-    font-size: 0.8em;
+    font-size: $fontSize;
     font-weight: bold;
     margin: 0;
 }
@@ -15,7 +16,7 @@
 }
 
 .chat-list-group__title {
-    font-size: 0.75em;
+    font-size: $fontSize;
     font-weight: bold;
 }
 
