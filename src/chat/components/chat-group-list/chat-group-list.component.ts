@@ -6,13 +6,11 @@ import { Group } from '../../stores/group.store';
 	templateUrl: 'chat-group-list.component.html',
 	styleUrls: ['chat-group-list.component.scss'],
 })
-export class ChatGroupListComponent implements OnInit {
+
+/** Список групп */
+export class ChatGroupListComponent {
 	@Input() groups: Group[] = [];
 	@Output() select = new EventEmitter();
 	
 	public title = 'Продукты';
-
-	constructor() {}
-
-	ngOnInit() {}
 }

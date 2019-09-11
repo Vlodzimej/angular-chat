@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ChatComponent } from './chat.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClient } from '@angular/common/http';
+
 import {
 	ChatSideMenuComponent,
 	ChatHeaderComponent,
@@ -15,12 +16,10 @@ import {
 	ChatControlComponent,
 } from './components';
 
-import { ChatModalService } from './services/chat.modal.service';
-import { GroupService } from './services/group.service';
-import { MessageService } from './services/message.service';
+import { ChatModalService, GroupService, MessageService } from './services';
 
-import { GroupStore } from './stores/group.store';
-import { MessageStore } from './stores/message.store';
+import { GroupStore, MessageStore } from './stores';
+
 
 @NgModule({
 	imports: [CommonModule, FormsModule, FontAwesomeModule],

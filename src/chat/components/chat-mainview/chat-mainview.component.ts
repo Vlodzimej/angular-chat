@@ -7,12 +7,14 @@ import { MessageStore, Message } from '../../stores/message.store';
 	templateUrl: 'chat-mainview.component.html',
 	styleUrls: ['chat-mainview.component.scss'],
 })
+
+/** Элемент отображения сообщения и элементов управления */
 export class ChatMainViewComponent implements OnInit {
 
 	public messages: Observable<Message[]>;
-	constructor(private _messageStore: MessageStore) {}
+	constructor(private messageStore: MessageStore) {}
 
 	ngOnInit() {
-		this.messages = fromMobx(() => this._messageStore.groups);
+		this.messages = fromMobx(() => this.messageStore.messages);
 	}
 }

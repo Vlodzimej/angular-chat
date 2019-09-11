@@ -6,15 +6,18 @@ import { ChatModalService } from './services/chat.modal.service';
 	templateUrl: 'chat.component.html',
 	styleUrls: ['chat.component.scss'],
 })
+
 export class ChatComponent implements OnInit {
-	public isVisible = false;
+	/** Флаг отображения окна */
+	public isVisibled = false;
 	constructor(private chatModalService: ChatModalService) {}
 
 	ngOnInit() {
+		/** Отправляем ссылку на элемент в сервис чата */
 		this.chatModalService.addModal(this);
 	}
-
+	/**Переключение отображения окна часа */
 	toggleModal() {
-		this.isVisible = !this.isVisible;
+		this.isVisibled = !this.isVisibled;
 	}
 }

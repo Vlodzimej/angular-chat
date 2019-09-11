@@ -2,6 +2,6 @@
     <chat-header></chat-header>
     <chat-group-list
         [groups]="groups | async"
-        (select)="selectGroup($event)"
+        (select)="onSelectGroup($event)"
     ></chat-group-list>
 </div>

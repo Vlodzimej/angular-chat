@@ -6,10 +6,11 @@ import { Message } from '../../stores/message.store';
 	templateUrl: 'chat-message-item.component.html',
 	styleUrls: ['chat-message-item.component.scss'],
 })
+
+/** Элемент отображения сообщения */
 export class ChatMessageItemComponent implements OnInit {
 	@Input() message: Message;
 	public time: String = '';
-	constructor() {}
 
 	ngOnInit() {
 		this.time = this.getTime();

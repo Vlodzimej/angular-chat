@@ -7,11 +7,14 @@ import { ChatModalService } from '../../services/chat.modal.service';
 	templateUrl: 'chat-header.component.html',
 	styleUrls: ['chat-header.component.scss'],
 })
-export class ChatHeaderComponent implements OnInit {
+
+/** Заголовок окна чата */
+export class ChatHeaderComponent {
 	constructor(private chatModalService: ChatModalService) {}
+	
 	faTimes = faTimes;
 	title = 'Бизнес-чат';
-	ngOnInit() {}
+
 	onClose() {
 		this.chatModalService.toggleModal();
 	}

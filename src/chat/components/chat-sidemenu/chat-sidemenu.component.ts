@@ -7,6 +7,8 @@ import { MessageStore } from '../../stores/message.store';
 	selector: 'chat-sidemenu',
 	templateUrl: 'chat-sidemenu.component.html',
 })
+
+/** Боковая панель с отображением заголовка и списка групп */
 export class ChatSideMenuComponent implements OnInit {
 	public groups: Observable<Group[]>;
 	constructor(
@@ -19,8 +21,8 @@ export class ChatSideMenuComponent implements OnInit {
 		this.groups = fromMobx(() => this._groupStore.groups);
 	}
 
-	selectGroup(groupId: String) {
-        console.log(groupId);
+	/** Выбор группы */
+	onSelectGroup(groupId: String) {
         this._messageStore.getMessagesByGroupId(groupId);
 	}
 }

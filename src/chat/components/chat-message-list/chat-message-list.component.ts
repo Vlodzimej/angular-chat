@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Message } from '../../stores/message.store';
 
 @Component({
@@ -6,9 +6,8 @@ import { Message } from '../../stores/message.store';
 	templateUrl: 'chat-message-list.component.html',
 	styleUrls: ['chat-message-list.component.scss'],
 })
-export class ChatMessageListComponent implements OnInit {
-	@Input() messages: Message[] = [];
-	constructor() {}
 
-	ngOnInit() {}
+/** Список сообщений */
+export class ChatMessageListComponent {
+	@Input() messages: Message[] = [];
 }

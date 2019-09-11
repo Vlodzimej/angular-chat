@@ -7,11 +7,8 @@ import { ChatModalService } from '../chat/services/chat.modal.service';
 	styleUrls: ['app.component.scss', '../assets/styles/normalize.css'],
 })
 export class AppComponent {
-	constructor(private chatModalService: ChatModalService) {
-		this.isShowChatModal = chatModalService.isVisible;
-	}
-	isShowChatModal = false;
-	
+	constructor(private chatModalService: ChatModalService) {}
+
 	toggleChat(): void {
 		this.chatModalService.toggleModal();
 	}

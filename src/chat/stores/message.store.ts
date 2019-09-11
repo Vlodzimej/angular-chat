@@ -24,15 +24,15 @@ export class Sender {
 
 @Injectable()
 export class MessageStore {
-	@observable groups: Message[] = [];
+	@observable messages: Message[] = [];
 
-	constructor(private _messageService: MessageService) {}
+	constructor(private messageService: MessageService) {}
 
 	@action async getMessagesByGroupId(groupId: String) {
-		this.groups = await this._messageService.getMessagesByGroupId(groupId);
+		this.messages = await this.messageService.getMessagesByGroupId(groupId);
 	}
 
 	@action addMessage(data: Message) {
-		this.groups.push(data);
+		this.messages.push(data);
 	}
 }

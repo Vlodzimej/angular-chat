@@ -11,14 +11,12 @@ import { Group } from '../../stores/group.store';
 	templateUrl: 'chat-group-item.component.html',
 	styleUrls: ['chat-group-item.component.scss'],
 })
-export class ChatGroupItemComponent implements OnInit {
+
+/** Элемент списка групп */
+export class ChatGroupItemComponent {
 	@Input() group: Group;
 
 	faArrowRight = faArrowRight;
 	faCommentDots = faCommentDots;
 	faExclamationTriangle = faExclamationTriangle;
-
-	constructor() {}
-
-	ngOnInit() {}
 }
